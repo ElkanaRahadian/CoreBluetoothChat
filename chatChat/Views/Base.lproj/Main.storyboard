@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UeX-kQ-CCC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Read-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="chatChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K6X-xs-aaB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6xo-kU-zpv">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="649"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHv-5r-vB8">
+                                        <rect key="frame" x="0.0" y="649" width="414" height="40"/>
+                                        <color key="backgroundColor" red="0.77820994070000005" green="0.21854643160000001" blue="0.13082461570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="MXB-Nf-Qdg"/>
+                                        </constraints>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clearTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LqF-56-f4h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWi-3E-dS2">
+                                        <rect key="frame" x="0.0" y="689" width="414" height="40"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5h0-ei-xNb"/>
+                                        </constraints>
+                                        <state key="normal" title="Stop">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stopPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QVv-Me-nSN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dh-IN-ZFA">
+                                        <rect key="frame" x="0.0" y="729" width="414" height="40"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="7xS-2L-8rY"/>
+                                            <constraint firstAttribute="height" constant="40" id="EaA-AK-yob"/>
+                                        </constraints>
+                                        <state key="normal" title="ScrollToBottom">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="scrollPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7ox-fI-DEl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K6X-xs-aaB" secondAttribute="trailing" id="CsJ-Ec-nO9"/>
+                            <constraint firstItem="K6X-xs-aaB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PRI-DJ-0gn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="K6X-xs-aaB" secondAttribute="bottom" id="Xnp-Tu-aMr"/>
+                            <constraint firstItem="K6X-xs-aaB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="trO-kX-rLR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Read" image="magnifyingglass" catalog="system" id="MIQ-fc-mkP"/>
+                    <connections>
+                        <outlet property="dataView" destination="6xo-kU-zpv" id="q54-ll-ual"/>
+                        <outlet property="toggleStateOutlet" destination="XWi-3E-dS2" id="hsO-ry-7GK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1032" y="40"/>
+        </scene>
+        <!--Listen-->
+        <scene sceneID="bth-FB-Qbr">
+            <objects>
+                <viewController id="Wcg-lb-7Zg" customClass="ListenViewController" customModule="chatChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="78B-ZL-oxV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cXH-6h-wiJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Listener data here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yni-09-IOP">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="669"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwb-IG-ApZ">
+                                        <rect key="frame" x="0.0" y="669" width="414" height="50"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="jfL-FH-GMe"/>
+                                        </constraints>
+                                        <state key="normal" title="Start Listening">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startListeningTapped:" destination="Wcg-lb-7Zg" eventType="touchUpInside" id="FOK-WY-nbt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjc-og-Lgr">
+                                        <rect key="frame" x="0.0" y="719" width="414" height="50"/>
+                                        <color key="backgroundColor" red="0.77820994070000005" green="0.21854643160000001" blue="0.13082461570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wcq-io-mK7"/>
+                                        </constraints>
+                                        <state key="normal" title="Stop Listening">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stopListeningTapped:" destination="Wcg-lb-7Zg" eventType="touchUpInside" id="dDp-vI-e0x"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="TS6-D6-eQC" firstAttribute="bottom" secondItem="cXH-6h-wiJ" secondAttribute="bottom" id="4cW-ks-WZ3"/>
+                            <constraint firstItem="TS6-D6-eQC" firstAttribute="trailing" secondItem="cXH-6h-wiJ" secondAttribute="trailing" id="6gn-vk-EK8"/>
+                            <constraint firstItem="cXH-6h-wiJ" firstAttribute="top" secondItem="TS6-D6-eQC" secondAttribute="top" id="Eqp-u7-CJ6"/>
+                            <constraint firstItem="cXH-6h-wiJ" firstAttribute="leading" secondItem="TS6-D6-eQC" secondAttribute="leading" id="FOE-kh-HVT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TS6-D6-eQC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Listen" image="ear" catalog="system" id="dtq-Cl-By7"/>
+                    <connections>
+                        <outlet property="listernerDataView" destination="yni-09-IOP" id="Py1-6E-bBa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgJ-8S-HyW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="860"/>
+        </scene>
+        <!--Broadcast-->
+        <scene sceneID="cwX-nX-iqG">
+            <objects>
+                <viewController id="4Gn-YV-H9b" customClass="BroadcastViewController" customModule="chatChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b59-cD-Uu5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Gxl-Ux-qca">
+                                <rect key="frame" x="122" y="385.5" width="170" height="125"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXX-Zu-D3G">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="50"/>
+                                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="170" id="Quq-S7-fzt"/>
+                                            <constraint firstAttribute="height" constant="50" id="a5i-j0-HEc"/>
+                                        </constraints>
+                                        <state key="normal" title="Start Broadcasting">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="startBroadcastTapped:" destination="4Gn-YV-H9b" eventType="touchUpInside" id="QI7-fc-KeG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nA0-CA-L0d">
+                                        <rect key="frame" x="0.0" y="75" width="170" height="50"/>
+                                        <color key="backgroundColor" red="0.77820994070000005" green="0.21854643160000001" blue="0.13082461570000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2Z1-eO-Hsd"/>
+                                            <constraint firstAttribute="width" constant="170" id="31U-Dt-dal"/>
+                                        </constraints>
+                                        <state key="normal" title="Stop Broadcasting">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="stopBroadcastTapped:" destination="4Gn-YV-H9b" eventType="touchUpInside" id="Fhn-MG-aRR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gxl-Ux-qca" firstAttribute="centerY" secondItem="b59-cD-Uu5" secondAttribute="centerY" id="8mn-QY-rfg"/>
+                            <constraint firstItem="Gxl-Ux-qca" firstAttribute="centerX" secondItem="b59-cD-Uu5" secondAttribute="centerX" id="Rc9-fM-3px"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iye-py-QrJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Broadcast" image="badge.plus.radiowaves.right" catalog="system" id="eKy-aK-LIC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gKH-Y4-jAl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.8840579710145" y="716.51785714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IDK-mi-fgu">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="UeX-kQ-CCC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BwS-FP-n0C">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="syo-gf-7Yq"/>
+                        <segue destination="4Gn-YV-H9b" kind="relationship" relationship="viewControllers" id="MyP-Da-YZB"/>
+                        <segue destination="Wcg-lb-7Zg" kind="relationship" relationship="viewControllers" id="QJC-rf-Qa1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BiM-GR-wzO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="badge.plus.radiowaves.right" catalog="system" width="64" height="50"/>
+        <image name="ear" catalog="system" width="52" height="64"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
