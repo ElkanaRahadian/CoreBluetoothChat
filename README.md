@@ -1,8 +1,11 @@
-# chatChat
-Playing around with CoreBluetooth iBeacons, Discoverability, etc.
+# CoreBluetoothChat
 
-I've been looking into how the CoreBluethooth API works.
+## Overview
+iOS Chat App using with CoreBluetooth iBeacons
+
+## Features
+CoreBluetooth API, Discoverability
 
 <p align="center">
-  <img height="500" src="/chatChatScreenshot.png">
+  <img height="500" src="/CoreBluetoothChat.png">
 </p>
