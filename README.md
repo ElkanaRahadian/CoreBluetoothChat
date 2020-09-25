@@ -4,7 +4,7 @@
 iOS Chat App using with CoreBluetooth iBeacons
 
 ## Features
-Core Bluetooth API, Discoverability
+CoreBluetooth API, Discoverability
 
 <p align="center">
   <img height="500" src="/CoreBluetoothChat.png">
