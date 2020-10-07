@@ -1,10 +1,12 @@
 # CoreBluetoothChat
 
 ## Overview
-iOS Chat App using with CoreBluetooth iBeacons
+iOS Chat App with CoreBluetooth, implementing iBeacons and Discoverability.
 
 ## Features
-CoreBluetooth API, Discoverability
+- Read
+- Broadcast
+- Listen
 
 <p align="center">
   <img height="500" src="/CoreBluetoothChat.png">
