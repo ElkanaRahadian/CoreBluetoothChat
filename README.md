@@ -1,7 +1,7 @@
 # CoreBluetoothChat
 
 ## Overview
-iOS Chatting App with CoreBluetooth, implementing iBeacons and Discoverability.
+iOS Chatting Application with CoreBluetooth, implementing iBeacons and Discoverability.
 
 ## Features
 - Read
