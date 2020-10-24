@@ -1,16 +1,7 @@
-//
-//  ViewController.swift
-//  chatChat
-//
-//  Created by Arin Davoodian on 8/9/19.
-//  Copyright © 2019 arin. All rights reserved.
-//
-
 import UIKit
 import CoreBluetooth
 
-class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralManagerDelegate{
-    
+class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralManagerDelegate{    
     
     @IBOutlet weak var dataView: UITextView!
     
@@ -124,10 +115,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralMa
     
     @IBAction func clearTapped(_ sender: UIButton) {
         self.dataView.text = ""
-    }
-    
-
-  
+    }   
 
 }
 
