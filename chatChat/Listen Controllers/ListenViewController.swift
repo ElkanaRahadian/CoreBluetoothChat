@@ -1,14 +1,5 @@
-//
-//  ListenViewController.swift
-//  chatChat
-//
-//  Created by Arin Davoodian on 2/21/20.
-//  Copyright © 2020 arin. All rights reserved.
-//
-
 import UIKit
 import CoreLocation
-
 
 class ListenViewController: UIViewController, CLLocationManagerDelegate {
 
