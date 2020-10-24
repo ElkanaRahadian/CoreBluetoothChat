@@ -96,8 +96,6 @@ class ViewController: UIViewController, CBCentralManagerDelegate, CBPeripheralMa
         
         for request in requests {
             if let value = request.value {
-                
-                //here is the message text that we receive, use it as you wish.
                 let messageText = String(data: value, encoding: String.Encoding.utf8) as String?
 				debugPrint(messageText as Any)
             }
