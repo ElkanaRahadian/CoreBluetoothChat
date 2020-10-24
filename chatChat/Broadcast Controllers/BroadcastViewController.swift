@@ -1,11 +1,3 @@
-//
-//  BroadcastViewController.swift
-//  chatChat
-//
-//  Created by Arin Davoodian on 2/21/20.
-//  Copyright © 2020 arin. All rights reserved.
-//
-
 import UIKit
 import CoreBluetooth
 import CoreLocation
@@ -17,9 +9,7 @@ class BroadcastViewController: UIViewController, CBPeripheralManagerDelegate {
 	var peripheralManager: CBPeripheralManager!
 	
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        
+        super.viewDidLoad()        
     }
 	
 	@IBAction func startBroadcastTapped(_ sender: UIButton) {
@@ -66,6 +56,5 @@ class BroadcastViewController: UIViewController, CBPeripheralManagerDelegate {
 			print("Stopped Broadcast State OFF")
         }
     }
-	
 
 }
