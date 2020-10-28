@@ -1,5 +1,5 @@
 import UIKit
-import CoreBluetoot
+import CoreBluetooth
 import CoreLocation
 
 class BroadcastViewController: UIViewController, CBPeripheralManagerDelegate {
