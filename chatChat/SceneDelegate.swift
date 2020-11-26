@@ -1,4 +1,4 @@
-import UIKi
+import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
