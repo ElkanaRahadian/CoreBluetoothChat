@@ -1,4 +1,4 @@
-# CoreBluetoothChat
+# 
 
 ## Overview
 iOS Chat App with CoreBluetooth, implementing iBeacons and Discoverability.
