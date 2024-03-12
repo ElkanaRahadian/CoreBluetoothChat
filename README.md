@@ -1,4 +1,4 @@
-## Overvie
+## Overview
 iOS Chat App with CoreBluetooth, implementing iBeacon and Discoverability.
 
 ## Features
